@@ -1,0 +1,95 @@
+/* Code for the background which may need changing according to the styling*/ 
+
+body {
+	background-color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: stretch;
+    }
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: italic;
+    text-align: center;
+  }
+
+/*Styling of the main image */
+
+img {
+    padding: none;
+    border: solid 20px black;
+    margin: 10px;
+    box-shadow: 10px 10px 10px #999;
+}
+
+/*Styling of the nav bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/*Styling of the main section */
+
+.grid-container {
+    display: grid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    grid-template-areas: 
+    'Aktualnosci Aktualnosci'
+    'Olaf na wystawie! assets/olaf-wystawa1.jpeg';
+}
+
+
+/*Footer and content within styling */
+
+footer {
+    border-top: solid black 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
